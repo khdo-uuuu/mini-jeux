@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .memory-container {
+      max-width: 500px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .card {
+      background-color: #ffeaa7;
+      font-size: 2em;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.3s;
+    }
+    .card.flipped {
+      background-color: #fab1a0;
+      transform: rotateY(180deg);
+    }
+    .card.matched {
+      background-color: #55efc4;
+      pointer-events: none;
+    }
+    h1 {
+      text-align: center;
+    }
+    #message {
+      text-align: center;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #6c5ce7;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 Memory - Jeu de paires</h1>
+  <div class="memory-container" id="memory-game"></div>
+  <p id="message">Trouve toutes les paires !</p>
+  <script src="js/memory.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Devine le mot</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background-color: #fceefc;
+    }
+    .lettres {
+      font-size: 2em;
+      letter-spacing: 10px;
+      margin: 20px 0;
+    }
+    input[type="text"] {
+      padding: 10px;
+      font-size: 1.2em;
+      width: 60px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      margin-top: 10px;
+      cursor: pointer;
+      background-color: #fab1a0;
+      border: none;
+      border-radius: 8px;
+      color: white;
+    }
+    #message {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #6c5ce7;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔠 Devine le mot !</h1>
+  <div class="lettres" id="motCache">_ _ _ _ _</div>
+
+  <input type="text" id="lettre" maxlength="1">
+  <button onclick="deviner()">Deviner</button>
+
+  <p id="message">Tu as 6 essais... Bonne chance Khadou ! 🍀</p>
+
+  <a href="index.html">⬅ Retour</a>
+
+  <script src="js/devine le mot.js"></script>
+</body>
+</html>
